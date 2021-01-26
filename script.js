@@ -30,8 +30,9 @@ function createCalculator(currentNumber) {
 }
 
 
-console.log(calc.sum());
-console.log(calc.mult());
-console.log(calc.sub());
-console.log(calc.div());
-console.log(calc.set());
+console.log(calc.sum(5));
+console.log(calc.mult(10));
+console.log(calc.sub(40));
+console.log(calc.div(10));
+console.log(calc.set(100));
+
