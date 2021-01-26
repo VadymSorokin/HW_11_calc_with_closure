@@ -8,30 +8,27 @@
 
 const calc = createCalculator(10);
 
-function createCalculator(a) {
-	const sum = () => {
-		return a += 5;
-	}
-	const mult = () => {
-		return a *= 10;
-	}
-	const sub = () => {
-		return a -= 40;
-	}
-	const div = () => {
-		return a /= 10;
-	}
-	const set = () => {
-		return a = 100;
-	}
+function createCalculator(currentNumber) {
+	
 	return {
-		sum,
-		mult,
-		sub,
-		div,
-		set,
+		 sum : (num) => {
+			return currentNumber += num;
+		},
+		 mult : (num) => {
+			return currentNumber *= num;
+		},
+		 sub :(num) => {
+			return currentNumber -= num;
+		},
+		 div :(num) => {
+			return currentNumber /= num;
+		},
+		 set : (num) => {
+			return currentNumber = num;
+		},
 	}
 }
+
 
 console.log(calc.sum());
 console.log(calc.mult());
